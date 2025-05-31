@@ -77,6 +77,7 @@
         .domain(d3.range(n + 1))
         .rangeRound([marginTop, marginTop + barSize * (n + 1 + 0.1)])
         .padding(0.1);
+      const categoryByName = new Map(data.map(d => [d.name, d.category]));
       const color = d => {
         const categoryColors = {
           "Aspirante": "#1f77b4",
