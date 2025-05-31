@@ -82,11 +82,11 @@
         const categoryColors = {
           "Aspirante": "#5fcdf5",
           "Aspirante Avanzado": "#ff0000",
-          "Patrulla": "#ededed",
-          "Patrulla Nacional": "#0025fa"
+          "Patrulla": "#cbcbcb",
+          "Patrulla Nacional": "#0000FF"
         };
         const category = categoryByName.get(d.name);
-        return categoryColors[d.category] || "#999"; 
+        return categoryColors[category] || "#999"; 
       }
       const bars = svg => {
         let bar = svg.append('g')
