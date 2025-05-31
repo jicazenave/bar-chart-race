@@ -85,6 +85,7 @@
           "Patrulla": "#ededed",
           "Patrulla Nacional": "#0025fa"
         };
+        const category = categoryByName.get(d.name);
         return categoryColors[d.category] || "#999"; 
       }
       const bars = svg => {
