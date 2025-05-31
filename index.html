@@ -80,10 +80,10 @@
       const categoryByName = new Map(data.map(d => [d.name, d.category]));
       const color = d => {
         const categoryColors = {
-          "Aspirante": "#1f77b4",
-          "Aspirante Avanzado": "#ff7f0e",
-          "Patrulla": "#2ca02c",
-          "Patrulla Nacional": "#d62728"
+          "Aspirante": "#5fcdf5",
+          "Aspirante Avanzado": "#ff0000",
+          "Patrulla": "#ededed",
+          "Patrulla Nacional": "#0025fa"
         };
         return categoryColors[d.category] || "#999"; 
       }
